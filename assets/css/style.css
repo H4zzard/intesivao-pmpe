@@ -8,13 +8,13 @@
   /* As variáveis "--verde" foram redefinidas para AZUL PMPE para manter
      compatibilidade com a marcação HTML existente (class="verde", etc). */
   --azul: #1e63e6; /* Azul PMPE principal */
-  --azul-claro: #4a8bff; /* Azul claro de destaque */
-  --azul-escuro: #0a2a6b; /* Azul institucional profundo */
+  --azul-claro: #ff4757; /* Azul claro de destaque */
+  --azul-escuro: #8b0f1a; /* Azul institucional profundo */
   --azul-noite: #061638; /* Azul muito escuro p/ gradientes */
 
   --vermelho: #e62538; /* Vermelho sirene / alerta */
-  --vermelho-claro: #ff4757; /* Vermelho mais luminoso */
-  --vermelho-escuro: #8b0f1a; /* Vermelho profundo */
+  --vermelho-claro: #4a8bff; /* Vermelho mais luminoso */
+  --vermelho-escuro: #0a2a6b; /* Vermelho profundo */
 
   /* Aliases legacy — apontam para o azul/vermelho PMPE */
   --verde: var(--azul);
