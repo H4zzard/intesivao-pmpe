@@ -5,7 +5,7 @@
 
 /* ---------- Countdown ---------- */
 function initCountdown() {
-  const target = new Date('2026-05-30T09:00:00');
+  const target = new Date('2026-05-12T09:00:00');
   const ids = { dias: 'cd-dias', horas: 'cd-horas', min: 'cd-min', seg: 'cd-seg' };
   const fmt = n => String(n).padStart(2, '0');
 
