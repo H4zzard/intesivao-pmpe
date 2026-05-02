@@ -506,7 +506,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: var(--azul);
+  background: var(--vermelho);
   color: var(--branco);
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -526,7 +526,7 @@ ul {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--vermelho);
+  background: var(--azul);
   transform: translateX(-100%);
   transition: transform 0.35s;
   z-index: 0;
