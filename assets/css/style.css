@@ -245,7 +245,7 @@ ul {
 }
 
 .nav-cta {
-  background: var(--azul);
+  background: var(--vermelho);
   color: var(--branco);
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
@@ -260,7 +260,7 @@ ul {
   box-shadow: 0 4px 16px rgba(30, 99, 230, 0.35);
 }
 .nav-cta:hover {
-  background: var(--vermelho);
+  background: var(--azul);
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(230, 37, 56, 0.45);
 }
