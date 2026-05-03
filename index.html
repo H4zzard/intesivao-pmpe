@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Intensivão Caveira PMPE — 2 dias ao vivo com Prof. Everton Mota. 12 e 13 de Maio às 19h45. Garanta sua vaga por R$9,90."
+    />
+    <meta name="robots" content="index, follow" />
+    <title>
+      Intensivão Caveira PMPE 2026 — CPPEM Concursos | Prof. Everton Mota
+    </title>
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Intensivão Caveira PMPE 2026 — CPPEM Concursos"
+    />
+    <meta
+      property="og:description"
+      content="2 dias ao vivo para você sair do zero e montar seu plano de aprovação. Edital próximo. Garanta sua vaga por R$9,90."
+    />
+    <meta property="og:type" content="website" />
+    <!-- ⚠️ Substituir quando tiver a imagem: assets/img/og-cover.jpg -->
+    <meta property="og:image" content="assets/img/og-cover.jpg" />
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ========== SIRENE BACKGROUND (preservado) ========== -->
+    <div class="sirene-bg" aria-hidden="true">
+      <div class="sirene-sweep"></div>
+    </div>
+
+    <!-- ========== PROGRESS BAR ========== -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ========================================================
+     NAVIGATION
+     ======================================================== -->
+    <nav class="nav" id="nav">
+      <div class="nav-logo">
+        <!-- CPPEM Logo: img + texto. Se a img falhar (hotlink quebrado), o
+             texto "CPPEM" ao lado já garante a identidade visual. -->
+        <img
+          src="https://raw.githubusercontent.com/marketing942/fotos-dos-bots/main/LOGO%20CPPEM.png"
+          alt="CPPEM Concursos"
+          class="nav-logo-cppem"
+          onerror="this.style.display = 'none'"
+        />
+        <span class="nav-logo-text">CPPEM</span>
+
+        <span class="nav-logo-sep"></span>
+
+        <img
+          src="assets/img/pmpe.png"
+          alt="Polícia Militar de Pernambuco"
+          class="nav-logo-pmpe"
+          title="Polícia Militar de Pernambuco"
+        />
+      </div>
+
+      <a
+        href="https://checkout.cppem.com.br/pay/intensivao-caveira-pmpe-ingresso-online"
+        class="nav-cta"
+        ><span class="nav-cta-full">GARANTIR MEU PLANO DE APROVAÇÃO</span
+        ><span class="nav-cta-short">GARANTIR VAGA</span></a
+      >
+    </nav>
+
+    <!-- ========================================================
+     HERO — promessa forte nos primeiros 3 segundos
+     ======================================================== -->
+    <section class="hero" id="inicio">
+      <!-- Badge de urgência -->
+      <div class="hero-badge fade-up">
+        <span class="hero-badge-dot"></span>
+        Edital PMPE a qualquer momento
+      </div>
+
+      <!-- Selo PMPE central -->
+      <div class="hero-pmpe-seal fade-up">
+        <div class="hero-pmpe-seal-ring">
+          <img
+            src="assets/img/pmpe.png"
+            alt="Polícia Militar de Pernambuco"
+            class="hero-pmpe-img"
+          />
+        </div>
+        <div class="hero-pmpe-label">
+          <span>Preparação Específica Para</span>
+          <strong>Polícia Militar de Pernambuco</strong>
+        </div>
+      </div>
+
+      <h1 class="hero-titulo fade-up">
+        PMPE 2026: como sair do zero e montar seu
+        <span class="destaque">plano de aprovação</span> em 2 dias, mesmo sem
+        saber por onde começar
+      </h1>
+
+      <p class="hero-subtitulo fade-up">
+        Intensivão Caveira PMPE: <strong>2 noites ao vivo</strong>
+        com o Prof. Everton Mota. Direcionamento prático e clareza pra você
+        chegar pronto na hora que o edital sair.
+      </p>
+
+      <!-- Info strip -->
+      <div class="hero-data fade-up">
+        <div class="hero-data-item">
+          <span class="hero-data-label">Datas</span>
+          <span class="hero-data-value">12 e 13 de Maio</span>
+        </div>
+        <div class="hero-data-sep"></div>
+        <div class="hero-data-item">
+          <span class="hero-data-label">Horário</span>
+          <span class="hero-data-value">19h45 · Ao Vivo</span>
+        </div>
+        <div class="hero-data-sep"></div>
+        <div class="hero-data-item">
+          <span class="hero-data-label">Formato</span>
+          <span class="hero-data-value">100% Online</span>
+        </div>
+        <div class="hero-data-sep"></div>
+        <div class="hero-data-item">
+          <span class="hero-data-label">Professor</span>
+          <span class="hero-data-value">Everton Mota</span>
+        </div>
+      </div>
+
+      <!-- Countdown -->
+      <div class="fade-up">
+        <span class="countdown-label">Faltam para o Intensivão</span>
+        <div class="countdown">
+          <div class="cd-item">
+            <div class="cd-num" id="cd-dias">00</div>
+            <span class="cd-unit">Dias</span>
+          </div>
+          <span class="cd-sep">:</span>
+          <div class="cd-item">
+            <div class="cd-num" id="cd-horas">00</div>
+            <span class="cd-unit">Horas</span>
+          </div>
+          <span class="cd-sep">:</span>
+          <div class="cd-item">
+            <div class="cd-num" id="cd-min">00</div>
+            <span class="cd-unit">Min</span>
+          </div>
+          <span class="cd-sep">:</span>
+          <div class="cd-item">
+            <div class="cd-num" id="cd-seg">00</div>
+            <span class="cd-unit">Seg</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA principal -->
+      <div class="hero-cta-wrap fade-up">
+        <a
+          href="https://checkout.cppem.com.br/pay/intensivao-caveira-pmpe-ingresso-online"
+          class="btn-primary"
+        >
+          Quero garantir minha vaga na PMPE
+          <span class="btn-arrow">→</span>
+        </a>
+        <div class="hero-garantia">
+          <span>Vagas limitadas</span>
+          <span>Material gratuito imediato</span>
+          <span>Pagamento 100% seguro</span>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span>Role para baixo</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+     PROVA SOCIAL IMEDIATA — logo abaixo do hero
+     ======================================================== -->
+    <section class="prova-topo">
+      <div class="prova-topo-inner fade-up">
+        <div class="prova-stat">
+          <div class="prova-stat-num">14K+</div>
+          <div class="prova-stat-label">Alunos<br />Aprovados</div>
+        </div>
+        <div class="prova-stat">
+          <div class="prova-stat-num">15</div>
+          <div class="prova-stat-label">Concursos<br />do Professor</div>
+        </div>
+        <div class="prova-stat">
+          <div class="prova-stat-num">7+</div>
+          <div class="prova-stat-label">Anos de<br />Atuação</div>
+        </div>
+        <div class="prova-stat">
+          <div class="prova-stat-num">100%</div>
+          <div class="prova-stat-label">Foco no<br />Edital PMPE</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alerta -->
+    <div class="alert-banner">
+      ⚡&nbsp; EDITAL PMPE PRÓXIMO — QUEM COMEÇAR AGORA SAI NA FRENTE
+    </div>
+
+    <hr class="sep" />
+
+    <!-- ========================================================
+     SEÇÃO 3 — DOR (não sei por onde começar)
+     ======================================================== -->
+    <section class="dor-section">
+      <div class="section-label" style="justify-content: center">
+        Se você se identifica com isso
+      </div>
+      <h2 class="dor-titulo fade-up">
+        Você quer a farda da PMPE,<br />
+        mas <span class="verde">se sente perdido</span> antes mesmo<br />
+        do edital sair?
+      </h2>
+      <p class="dor-sub fade-up">
+        Você não está sozinho. A maioria dos candidatos chega no dia da prova
+        sem ter feito o básico certo. E o edital não espera ninguém.
+      </p>
+
+      <div class="dor-grid fade-up">
+        <div class="dor-card">
+          <div class="dor-card-icon">🌀</div>
+          <h3 class="dor-card-titulo">Não sabe por onde começar</h3>
+          <p class="dor-card-texto">
+            Tanto conteúdo, tanta matéria, tanto vídeo no YouTube, e nenhum
+            plano claro. Você abre o caderno e não sabe o que estudar primeiro.
+          </p>
+        </div>
+        <div class="dor-card">
+          <div class="dor-card-icon">⏳</div>
+          <h3 class="dor-card-titulo">Tem medo de estudar errado</h3>
+          <p class="dor-card-texto">
+            Você está estudando, mas não sabe se é o que cai. Receia chegar na
+            prova e descobrir que perdeu meses no que não importava.
+          </p>
+        </div>
+        <div class="dor-card">
+          <div class="dor-card-icon">⚠️</div>
+          <h3 class="dor-card-titulo">Sente o tempo apertando</h3>
+          <p class="dor-card-texto">
+            O edital pode sair a qualquer momento. Quando ele cair, todo mundo
+            vai começar a estudar, e quem começou antes vai estar na frente.
+          </p>
+        </div>
+      </div>
+
+      <div class="dor-promessa fade-up">
+        <div class="dor-promessa-label">A solução em 2 noites</div>
+        <p class="dor-promessa-texto">
+          Em <strong>2 dias ao vivo</strong>, você sai com
+          <strong>direção, método e clareza</strong> sobre o que estudar, como
+          estudar e por onde começar, pra chegar pronto quando o edital abrir.
+        </p>
+      </div>
+    </section>
+
+    <hr class="sep" />
+
+    <!-- ========================================================
+     SEÇÃO: PARA QUEM É (com PMPE logo lateral)
+     ======================================================== -->
+    <div class="para-quem-section">
+      <div class="para-quem-inner">
+        <div class="para-quem-pmpe fade-up">
+          <div class="pmpe-badge-wrap">
+            <img
+              src="assets/img/pmpe.png"
+              alt="PM-PE"
+              class="pmpe-badge-grande"
+            />
+            <div class="pmpe-badge-glow"></div>
+          </div>
+          <div class="pmpe-badge-info">
+            <span class="pmpe-badge-sigla">PM-PE</span>
+            <span class="pmpe-badge-nome"
+              >Polícia Militar<br />de Pernambuco</span
+            >
+            <span class="pmpe-badge-edital">Edital previsto: em breve</span>
+          </div>
+        </div>
+
+        <div class="para-quem-texto fade-up">
+          <div class="section-label">Para Quem É</div>
+          <h2 class="section-titulo">
+            Este Intensivão é<br />
+            <span class="verde">específico para você</span><br />
+            que quer a farda da PM-PE
+          </h2>
+          <p class="section-desc" style="margin-bottom: 0">
+            Não é evento genérico de concurso. É preparação
+            <strong style="color: var(--branco)"
+              >direcionada ao novo edital da Polícia Militar de
+              Pernambuco</strong
+            >
+            — matérias certas, banca certa, com quem já aprovou mais de 14 mil
+            candidatos em carreiras policiais.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- ========================================================
+     SEÇÃO: O INTENSIVÃO (2 dias)
+     ======================================================== -->
+    <div class="section">
+      <div class="section-label">O Evento</div>
+      <h2 class="section-titulo fade-up">
+        2 noites que podem<br />mudar <span class="verde">sua trajetória</span>
+      </h2>
+      <p class="section-desc fade-up">
+        Não é mais uma live. É preparação de verdade, com método, direcionada ao
+        que vai cair no edital.
+      </p>
+
+      <div class="aulao-grid">
+        <div class="aulao-dias fade-up">
+          <div class="dia-card">
+            <div class="dia-num">Dia 01 · Terça, 12 de Maio · 19h45</div>
+            <div class="dia-titulo">Base e Método</div>
+            <div class="dia-info">
+              2h de conteúdo intensivo · Online · Ao vivo com o professor
+            </div>
+          </div>
+          <div class="dia-card">
+            <div class="dia-num">Dia 02 · Quarta, 13 de Maio · 19h45</div>
+            <div class="dia-titulo">Aplicação e Estratégia</div>
+            <div class="dia-info">
+              2h de conteúdo intensivo · Online · Ao vivo com o professor
+            </div>
+          </div>
+          <div class="aulao-quote">
+            <p>
+              "O edital não espera quem não está pronto. São 2 noites para você
+              sair na frente de todos que ainda vão começar a estudar quando o
+              edital sair."
+            </p>
+            <cite>— Prof. Everton Mota</cite>
+          </div>
+        </div>
+
+        <div class="aulao-destaques fade-up">
+          <div class="destaque-item">
+            <div class="destaque-icon">🎯</div>
+            <div class="destaque-text">
+              <h4>Direcionado ao edital PM-PE</h4>
+              <p>
+                Conteúdo pensado para o que historicamente cai nos concursos da
+                Polícia Militar de Pernambuco.
+              </p>
+            </div>
+          </div>
+          <div class="destaque-item">
+            <div class="destaque-icon">⚡</div>
+            <div class="destaque-text">
+              <h4>Metodologia comprovada</h4>
+              <p>
+                O mesmo método que já aprovou mais de 14 mil alunos em carreiras
+                policiais. Direto ao ponto, sem enrolação.
+              </p>
+            </div>
+          </div>
+          <div class="destaque-item">
+            <div class="destaque-icon">🏆</div>
+            <div class="destaque-text">
+              <h4>Quem ensina já passou</h4>
+              <p>
+                Prof. Everton Mota foi aprovado em 15 concursos públicos. Ele
+                não ensina do livro, ensina da experiência real.
+              </p>
+            </div>
+          </div>
+          <div class="destaque-item">
+            <div class="destaque-icon">📱</div>
+            <div class="destaque-text">
+              <h4>100% online, ao vivo</h4>
+              <p>
+                Assista de onde estiver. Tire dúvidas em tempo real durante as
+                aulas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px">
+        <a
+          href="https://checkout.cppem.com.br/pay/intensivao-caveira-pmpe-ingresso-online"
+          class="btn-primary fade-up"
+        >
+          GARANTIR MEU PLANO DE APROVAÇÃO
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- ========================================================
+     SEÇÃO: O QUE VOCÊ RECEBE
+     ======================================================== -->
+    <div class="section">
+      <div class="section-label">O Que Está Incluso</div>
+      <h2 class="section-titulo fade-up">
+        O que você <span class="verde">recebe</span><br />ao garantir sua vaga
+      </h2>
+
+      <div class="recebe-grid fade-up">
+        <div class="recebe-card">
+          <div class="recebe-num">01</div>
+          <div class="recebe-titulo">Dia 1 — 12/Mai · 19h45</div>
+          <p class="recebe-desc">
+            2 horas ao vivo com o Prof. Everton. Base sólida e método para o que
+            vai cair no edital da PM-PE.
+          </p>
+        </div>
+        <div class="recebe-card">
+          <div class="recebe-num">02</div>
+          <div class="recebe-titulo">Dia 2 — 13/Mai · 19h45</div>
+          <p class="recebe-desc">
+            2 horas ao vivo de aplicação e estratégia. Saia com plano de estudos
+            e direção clara.
+          </p>
+        </div>
+        <div class="recebe-card">
+          <div class="recebe-num">03</div>
+          <div class="recebe-titulo">Grupo VIP no WhatsApp</div>
+          <p class="recebe-desc">
+            Acesso ao grupo exclusivo com lembretes, conteúdos e suporte antes e
+            durante os dois dias de Intensivão.
+          </p>
+          <span class="recebe-badge">Acesso imediato</span>
+        </div>
+      </div>
+
+      <!-- PDF Isca -->
+      <div class="pdf-card fade-up">
+        <div class="pdf-card-content">
+          <h3>Bônus Gratuito — Entregue na Hora</h3>
+          <h2>
+            Raio-X PM-PE:<br />O Que Cai, O Que Não Cai<br />e Por Onde Começar
+            Agora
+          </h2>
+          <p>
+            Assim que você garantir sua vaga, recebe automaticamente este
+            material desenvolvido pelo Prof. Everton Mota. O guia que mostra as
+            matérias mais cobradas pela banca, os erros que eliminam a maioria —
+            e o ponto de partida certo pra quem tem pouco tempo.
+          </p>
+        </div>
+        <div class="pdf-icon">
+          <span class="pdf-icon-symbol">📄</span>
+          <span class="pdf-icon-label">Grátis</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- ========================================================
+     SEÇÃO: PROFESSOR (com foto real)
+     ======================================================== -->
+    <div class="section">
+      <div class="professor-inner">
+        <div class="professor-foto fade-up">
+          <img
+            src="assets/img/everton-mota.jpg"
+            alt="Prof. Everton Mota"
+            class="professor-foto-real"
+            loading="lazy"
+          />
+          <div class="professor-foto-badge">
+            <div>
+              <div class="nome">Prof. Everton Mota</div>
+              <div class="cargo">Professor · Mentor · Oficial de Justiça</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="professor-info fade-up">
+          <div class="section-label">Seu Instrutor</div>
+          <h2>
+            Quem te ensina<br />aqui
+            <span class="verde">já passou.</span>
+          </h2>
+          <p class="professor-cargo">Prof. Everton Mota · CPPEM Concursos</p>
+          <p class="professor-bio">
+            Aprovado em 15 concursos públicos ao longo da carreira, o Prof.
+            Everton Mota não apenas ensina, ele prova que o método funciona.
+            Quem orienta aqui já passou por onde você quer chegar.
+          </p>
+          <p class="professor-bio">
+            Há mais de 7 anos formando candidatos para carreiras policiais no
+            Nordeste, com mais de 14 mil aprovados e uma metodologia que foca no
+            que realmente cai — sem enrolação, sem conteúdo desnecessário.
+          </p>
+          <div class="professor-stats">
+            <div class="prof-stat">
+              <div class="prof-stat-num">15</div>
+              <div class="prof-stat-label">Concursos aprovados</div>
+            </div>
+            <div class="prof-stat">
+              <div class="prof-stat-num">7+</div>
+              <div class="prof-stat-label">Anos de atuação</div>
+            </div>
+            <div class="prof-stat">
+              <div class="prof-stat-num">14K+</div>
+              <div class="prof-stat-label">Alunos aprovados</div>
+            </div>
+          </div>
+          <a href="#checkout" class="btn-primary">
+            Estudar com Everton por R$9,90
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- ========================================================
+     SEÇÃO: POR QUE R$9,90 (filtro de comprometimento)
+     ======================================================== -->
+    <div class="compromisso-section">
+      <div class="compromisso-inner">
+        <div class="preco-destaque fade-up">
+          <div class="preco-valor">R$9,90</div>
+          <div class="preco-label">Taxa de comprometimento</div>
+          <p class="preco-nota">
+            Não é o preço do ensino.<br />É o preço de quem é sério.
+          </p>
+        </div>
+
+        <div class="compromisso-texto fade-up">
+          <h2>
+            Por que cobramos <span class="verde">R$9,90</span><br />e não
+            fazemos gratuito?
+          </h2>
+          <p>
+            Porque <strong>evento gratuito enche de curioso</strong>. E curioso
+            não passa em concurso.
+          </p>
+          <p>
+            Esses R$9,90 existem para um único propósito:
+            <strong
+              >separar quem realmente quer a farda da PM-PE de quem só quer dar
+              uma olhada</strong
+            >.
+          </p>
+          <p>
+            Quem paga R$9,90 aparece. Quem aparece, aprende. Quem aprende,
+            passa. <strong>É simples assim.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- ========================================================
+     DEPOIMENTOS — placeholders prontos pra subir as fotos depois
+     ======================================================== -->
+    <div class="section">
+      <div class="section-label">Resultados Reais</div>
+      <h2 class="section-titulo fade-up">
+        Alunos que <span class="verde">vestiram a farda</span>
+      </h2>
+      <p class="section-desc fade-up">
+        Histórias reais de quem chegou onde você quer chegar.
+      </p>
+
+      <div class="depoimentos-grid fade-up">
+        <!-- DEPOIMENTO 1 — Para usar foto real:
+             1) Salve a imagem em assets/img/depoimentos/aluno-1.jpg
+             2) Adicione a classe "tem-foto" no .depo-avatar
+             3) Descomente a linha do <img> -->
+        <div class="depoimento-card">
+          <div class="depo-aspas">"</div>
+          <p class="depo-texto">
+            Tentei duas vezes antes de encontrar o CPPEM. No método do professor
+            Everton entendi que não era falta de inteligência — era falta de
+            direção. Aprovado na PM-PE na terceira tentativa.
+          </p>
+          <div class="depo-autor">
+            <div class="depo-avatar">
+              <!-- <img src="assets/img/depoimentos/aluno-1.jpg" alt="Fabrício S."> -->
+              🦁
+            </div>
+            <div>
+              <div class="depo-nome">Fabrício S.</div>
+              <div class="depo-cargo">Soldado PM-PE · Aprovado</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento-card">
+          <div class="depo-aspas">"</div>
+          <p class="depo-texto">
+            Trabalhava o dia todo e estudava à noite. O material do CPPEM é
+            direto ao ponto — sem enrolação. Passei com 8 meses de estudo. O
+            nome saiu no Diário Oficial.
+          </p>
+          <div class="depo-autor">
+            <div class="depo-avatar">
+              <!-- <img src="assets/img/depoimentos/aluno-2.jpg" alt="Marcela R."> -->
+              🦁
+            </div>
+            <div>
+              <div class="depo-nome">Marcela R.</div>
+              <div class="depo-cargo">Soldado PM-PE · Aprovada</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento-card">
+          <div class="depo-aspas">"</div>
+          <p class="depo-texto">
+            Saí de Caruaru aprovado. Minha família não acreditava que ia dar. O
+            prof. Everton disse desde o começo que ia dar, e deu. A metodologia
+            funciona pra quem tem pouco tempo.
+          </p>
+          <div class="depo-autor">
+            <div class="depo-avatar">
+              <!-- <img src="assets/img/depoimentos/aluno-3.jpg" alt="Vinícius A."> -->
+              🦁
+            </div>
+            <div>
+              <div class="depo-nome">Vinícius A.</div>
+              <div class="depo-cargo">Soldado PM-PE · Aprovado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- ========================================================
+     FAQ
+     ======================================================== -->
+    <div class="section" style="max-width: 760px">
+      <div class="section-label">Dúvidas Frequentes</div>
+      <h2 class="section-titulo fade-up">
+        Perguntas <span class="verde">e respostas</span>
+      </h2>
+
+      <div class="faq-list fade-up">
+        <div class="faq-item">
+          <div class="faq-pergunta" onclick="toggleFaq(this)">
+            Por que o ingresso custa R$9,90 e não é gratuito?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            <p>
+              Porque evento gratuito atrai curioso. Esses R$9,90 existem para um
+              único propósito: separar quem realmente quer passar no concurso de
+              quem só quer dar uma olhada. Quem paga R$9,90 aparece, presta
+              atenção e aproveita de verdade. Não é sobre dinheiro — é sobre
+              comprometimento.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-pergunta" onclick="toggleFaq(this)">
+            O Intensivão é ao vivo ou gravado?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            <p>
+              Ao vivo, nos dias 12 e 13 de maio às 19h45. Você acompanha as
+              aulas em tempo real e pode tirar dúvidas diretamente com o Prof.
+              Everton Mota durante as sessões.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-pergunta" onclick="toggleFaq(this)">
+            Como vou receber o material gratuito?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            <p>
+              Assim que o pagamento for confirmado, você recebe automaticamente
+              o PDF "Raio-X PM-PE" por e-mail e o acesso ao grupo VIP de
+              WhatsApp. O acesso é imediato — não precisa esperar nada.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-pergunta" onclick="toggleFaq(this)">
+            Já estudei para PMPE antes. Esse Intensivão é para mim?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            <p>
+              Sim. O conteúdo é intensivo e direcionado para o edital que está
+              por vir. Se você já estudou, vai sair ainda mais na frente. Se
+              nunca estudou, vai sair com uma base sólida e plano claro. Foi
+              desenhado para os dois perfis.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-pergunta" onclick="toggleFaq(this)">
+            Posso participar de qualquer lugar do Brasil?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            <p>
+              Sim. O Intensivão é 100% online. Você acessa de onde estiver —
+              celular, computador ou tablet. Basta ter internet.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-pergunta" onclick="toggleFaq(this)">
+            E se eu não conseguir assistir ao vivo nos dois dias?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            <p>
+              Recomendamos fortemente a presença ao vivo nos dois dias — porque
+              é onde você tira dúvidas em tempo real e absorve o método de
+              verdade. O grupo VIP envia lembretes pra você não perder.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- ========================================================
+     FOOTER
+     ======================================================== -->
+    <footer>
+      <div class="footer-logos">
+        <img
+          src="https://raw.githubusercontent.com/marketing942/fotos-dos-bots/main/LOGO%20CPPEM.png"
+          alt="CPPEM"
+          class="footer-logo-cppem"
+          onerror="this.style.display = 'none'"
+        />
+        <span class="footer-logo-text">CPPEM</span>
+        <span class="footer-logo-sep">×</span>
+        <img src="assets/img/pmpe.png" alt="PM-PE" class="footer-logo-pmpe" />
+      </div>
+      <p class="footer-tagline">"Seu sonho é o nosso principal objetivo."</p>
+      <div class="footer-links">
+        <!-- ⚠️ SUBSTITUA pelo número correto -->
+        <a href="https://wa.me/5581996246763" target="_blank" rel="noopener"
+          >Suporte via WhatsApp</a
+        >
+      </div>
+      <p class="footer-bottom">
+        © 2026 CPPEM Concursos · Caruaru, Pernambuco · Todos os direitos
+        reservados
+      </p>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <!-- ⚠️ SUBSTITUA pelo número correto -->
+    <a
+      href="https://wa.me/5581900000000"
+      target="_blank"
+      rel="noopener"
+      class="whatsapp-float"
+      title="Fale conosco no WhatsApp"
+    >
+      💬
+    </a>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
